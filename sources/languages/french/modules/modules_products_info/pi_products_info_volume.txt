@@ -1,0 +1,3 @@
+module_products_info_volume = Souhaitez-vous afficher le volume du produit ?
+module_products_info_volume_description = Affiche le volume du produit dans la page de description du produit
+text_products_volume = Volume du produit :
