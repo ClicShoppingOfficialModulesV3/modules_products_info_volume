@@ -27,7 +27,7 @@
       $this->title = CLICSHOPPING::getDef('module_products_info_volume');
       $this->description = CLICSHOPPING::getDef('module_products_info_volume_description');
 
-      if (defined('MODULE_PRODUCTS_INFO_VOLUME_STATUS')) {
+      if (\defined('MODULE_PRODUCTS_INFO_VOLUME_STATUS')) {
         $this->sort_order = MODULE_PRODUCTS_INFO_VOLUME_SORT_ORDER;
         $this->enabled = (MODULE_PRODUCTS_INFO_VOLUME_STATUS == 'True');
       }
@@ -64,7 +64,7 @@
     }
 
     public function check() {
-      return defined('MODULE_PRODUCTS_INFO_VOLUME_STATUS');
+      return \defined('MODULE_PRODUCTS_INFO_VOLUME_STATUS');
     }
 
     public function install() {
